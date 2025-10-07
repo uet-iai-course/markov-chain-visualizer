@@ -80,9 +80,9 @@ myApp.directive('stDiagram', function($compile) {
     .charge(-4000);
 
     // State Indicator
-    // currentStateG
-    //   .append('circle')
-    //   .attr('r', 10);
+    currentStateG
+      .append('circle')
+      .attr('r', 10);
 
     function calcResize() {
       return w = el.node().clientWidth, h = el.node().clientHeight, w + h;
