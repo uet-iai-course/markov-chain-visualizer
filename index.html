@@ -9,6 +9,57 @@
   <script src="vector.js"></script>
   <script src="angular.min.js" charset="utf-8"></script>
   <style>
+  body {
+  background-color: #222;
+  color: white;
+}
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.st-diagram {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.st-diagram .nodes {
+  pointer-events: all;
+}
+.matrixInput {
+  display: block;
+  height: 100%;
+  width: 40%;
+  right: 0;
+  position: absolute;
+}
+.matrixInput textarea{
+  border: none;
+  background-color: transparent;
+  color: red;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  outline: none;
+}
+.matrixInput textarea.valid {
+  color: white;
+}
+.matrix table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+.matrix table td {
+  width: 33.33%;
+}
+.matrix table td input {
+  pointer-events: all;
+  width: 80%;
+}
     body {
       background-color: #222;
       color: white;
